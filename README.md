@@ -5,3 +5,107 @@
 
 #### Submitted by,
 Sumedha Banerjee (19458122001)
+
+#### Degree Programme:
+Master of Sceince 
+
+#### Batch: 
+2022-2024
+
+#### Year:
+2023-2024
+
+#### Under the Supervision of:
+Prof. Mithun Mazumdar (HOD, Data Analytics Department)
+
+#### Submitted to, 
+Data Analytics
+
+#### at
+Institute of Management Study
+
+
+<img width="608" height="266" alt="Capture 1" src="https://github.com/user-attachments/assets/4e9146b9-00e7-4a71-9a19-f72057e3c53c" />
+
+
+### Abstract:
+
+Diabetic Retinopathy (DR) is a medical condition that 
+affects the eye for people who are diabetic. It weakens and 
+damages the blood vessels in tissues of the retina. This 
+condition highly affects people who do not manage their 
+blood sugar and pressure level properly. The damaged 
+blood vessels leak and cause dark spots in the vision of 
+those who are affected. Early detection and timely 
+intervention are crucial to prevent severe vision loss. So, this 
+is done manually by the doctor by placing drops in the 
+patient’s eyes to dilate the pupil so that they get a better 
+view of the inside and it will help them take a better look. 
+This is where Deep Learning comes into play. This report 
+presents a deep learning-based model for the automated 
+detection and classification of diabetic retinopathy from 
+retinal images. Leveraging convolutional neural networks 
+(CNNs), the proposed model analyses fundus photographs 
+to identify the presence and absence of DR. One thousand 
+Healthy retinal images and another 1000 of DR-affected 
+images taken from the dataset of Kaggle are utilized for this 
+project. The model achieves high accuracy in distinguishing 
+between the Healthy retinal images and the DR affected 
+ones, demonstrating its potential as a reliable assistive tool 
+for ophthalmologists in screening and diagnosis. The 
+proposed method also uses ResNet50 (Residual Network 
+that is 50 layers deep) model. Due to its depth and better 
+transfer learning capabilities, the proposed model with 
+ResNet50 achieved 97.16% classification accuracy. 
+Performance metrics such as accuracy, sensitivity, 
+specificity, and the area under the receiver operating 
+characteristic curve (AUC-ROC) are discussed to evaluate 
+the model's efficacy. The implementation details, data 
+preprocessing techniques, and model architecture are 
+elaborated upon, highlighting the advancements in deep 
+learning that enable improved diagnostic capabilities for 
+diabetic retinopathy.  
+Keywords: Diabetic Retinopathy, Deep Learning, 
+Convolutional Neural Networks, Retinal Images, Transfer 
+Learning, ResNet50.
+
+
+<img width="947" height="309" alt="Capture 2" src="https://github.com/user-attachments/assets/8ba3b356-2e00-4512-86eb-a704d00ef4cc" />
+
+
+### Problem Statement:
+
+1) Challenges in Manual Testing: Diabetic retinopathy (DR) is a leading cause of vision impairment and blindness among diabetic patients, requiring timely and accurate detection for effective treatment. However, the current diagnosis largely depends on manual examination of retinal images by ophthalmologists. This process is time-consuming, labor-intensive, and subject to human error and variability in interpretation. Additionally, there is a significant shortage of eye care specialists, especially in remote and underserved areas, leading to delays in diagnosis and treatment. 
+2) Need for an Automated, Accurate Solution: Given the limitations of manual testing, there is an urgent need for an automated, reliable, and efficient solution to detect diabetic retinopathy. A deep learning-based model can offer high accuracy and consistency in identifying DR from retinal images, reducing the burden on healthcare professionals and increasing access to early diagnosis and intervention. Such a solution would improve patient outcomes, prevent vision loss, and enhance the overall efficiency of healthcare systems.
+
+### Aim:
+- To create a deep learning-based model capable of analyzing retinal images and accurately detecting signs of diabetic retinopathy. 
+- Enhance early detection rates of diabetic retinopathy, enabling timely intervention and treatment.
+
+
+### Research Questions:
+
+1. Can a deep learning-based model accurately detect diabetic retinopathy from retinal images?
+
+2. How does the performance of the proposed model compare to traditional manual screening methods in terms of accuracy, speed, and scalability?
+
+3. What are the critical features and patterns in retinal images that the model uses to identify diabetic retinopathy?
+
+4. What are various model used in Diabetic Retinopathy?
+
+5. Which type of datasets has been used for Diabetic Retinopathy?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
