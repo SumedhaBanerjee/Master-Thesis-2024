@@ -96,6 +96,40 @@ Learning, ResNet50.
 5. Which type of datasets has been used for Diabetic Retinopathy?
 
 
+### Literature Review: 
+Many conventional methods, Machine Learning techniques and few Deep Learning approaches have been attempted for Diabetic Retinopathy detection.
+
+- Review on Conventional Methods: Argade et al. proposed Image Processing and Data Mining Techniques for automatic detection of Diabetic Retinopathy (3).
+Mukherjee et al. proposed another conventional technique. The methodology followed by them included Image Processing which involves background normalization and contrast enhancement using histogram equalization. It is followed by Optical Disk Detection, Blood Vessel Extraction and Exudate Detection (4).
+
+- Review on Machine Learning Techniques: Bhatia et al. proposed a Machine Learning Model for diagnosis of Diabetic Retinopathy using ensemble of classification algorithms, alternating decision tree, AdaBoost, Naive Bayes, Random Forest and SVM and achieved a maximum accuracy of 90 %, sensitivity of 94 % and F1-score of 90 % (5). Labhade et al. applied soft computing techniques for Diabetic Retinopathy Detection in which they used different classifiers like SVM, Random Forests, Gradient boost, AdaBoost, Gaussian Naive Bayes (6). Mohammadian et al. proposed a comparative analysis of 9 common Machine Learning Classification Algorithms for Diabetic Retinopathy Detection (7).
+
+- Review on Deep Learning Approaches: Doshi et al. proposed a Deep Learning Approach involving a Deep Convolutional Neural Network with a specific Network Architecture obtaining a Quadratic Kappa Score of 0.3996 (8). Xu et al. applied Deep Convolutional Neural Networks for early automated detection of Diabetic Retinopathy and achieved a highest accuracy of 94.5% (9). Gargeya et al. proposed a Deep Learning Model for identification of Diabetic Retinopathy and achieved a Sensitivity of 0.93, Specificity of 0.87 and Area Under the Receiver Operating Characteristic Curve of 0.94 (10).
+
+
+### Methodology:
+
+<img width="689" height="322" alt="Capture 3" src="https://github.com/user-attachments/assets/073e678c-60c7-4cdd-9a60-588bf123c424" />
+
+
+### Tools Used:
+
+<img width="938" height="420" alt="Capture 5" src="https://github.com/user-attachments/assets/7c3706fc-6b7f-46cf-b51f-1e9e3fc0a3d2" />
+
+### Dataset Description:
+
+The dataset consists of retinal fundus images used for detecting diabetic retinopathy. A large dataset of retinal images was collected from Kaggle. The dataset 
+consists of 2000 retinal images out of which, 1000 images are labelled as 1(Healthy folder) and 1000 images are labelled as 0 (DR_presence folder). 
+
+
+
+
+
+
+
+
+
+
 
 
 
