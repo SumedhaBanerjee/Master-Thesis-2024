@@ -161,6 +161,8 @@ consists of 2000 retinal images out of which, 1000 images are labelled as 1(Heal
 <img width="785" height="330" alt="Capture 11" src="https://github.com/user-attachments/assets/1245c85c-af11-4cdf-978f-fe41ec971746" />
 
 
+
+
 - Diabetic Retinopathy image prediction
 
 
@@ -221,6 +223,7 @@ Techniques”, International Conference on Green Computing and Internet of Thing
  
 [8]. Rishab Gargeya and Theodore Leng:”Automated Identification of Diabetic Retinopathy Using Deep Learning”, American Academy of Ophthalmology, 2017. 
 
+[9]. Dataset link: https://www.kaggle.com/datasets/sovitrath/diabetic-retinopathy-224x224-2019-data 
 
 
 
