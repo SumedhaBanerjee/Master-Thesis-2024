@@ -99,12 +99,12 @@ Learning, ResNet50.
 ### Literature Review: 
 Many conventional methods, Machine Learning techniques and few Deep Learning approaches have been attempted for Diabetic Retinopathy detection.
 
-- Review on Conventional Methods: Argade et al. proposed Image Processing and Data Mining Techniques for automatic detection of Diabetic Retinopathy (3).
-Mukherjee et al. proposed another conventional technique. The methodology followed by them included Image Processing which involves background normalization and contrast enhancement using histogram equalization. It is followed by Optical Disk Detection, Blood Vessel Extraction and Exudate Detection (4).
+- Review on Conventional Methods: Argade et al. proposed Image Processing and Data Mining Techniques for automatic detection of Diabetic Retinopathy (1).
+Mukherjee et al. proposed another conventional technique. The methodology followed by them included Image Processing which involves background normalization and contrast enhancement using histogram equalization. It is followed by Optical Disk Detection, Blood Vessel Extraction and Exudate Detection (2).
 
-- Review on Machine Learning Techniques: Bhatia et al. proposed a Machine Learning Model for diagnosis of Diabetic Retinopathy using ensemble of classification algorithms, alternating decision tree, AdaBoost, Naive Bayes, Random Forest and SVM and achieved a maximum accuracy of 90 %, sensitivity of 94 % and F1-score of 90 % (5). Labhade et al. applied soft computing techniques for Diabetic Retinopathy Detection in which they used different classifiers like SVM, Random Forests, Gradient boost, AdaBoost, Gaussian Naive Bayes (6). Mohammadian et al. proposed a comparative analysis of 9 common Machine Learning Classification Algorithms for Diabetic Retinopathy Detection (7).
+- Review on Machine Learning Techniques: Bhatia et al. proposed a Machine Learning Model for diagnosis of Diabetic Retinopathy using ensemble of classification algorithms, alternating decision tree, AdaBoost, Naive Bayes, Random Forest and SVM and achieved a maximum accuracy of 90 %, sensitivity of 94 % and F1-score of 90 % (3). Labhade et al. applied soft computing techniques for Diabetic Retinopathy Detection in which they used different classifiers like SVM, Random Forests, Gradient boost, AdaBoost, Gaussian Naive Bayes (4). Mohammadian et al. proposed a comparative analysis of 9 common Machine Learning Classification Algorithms for Diabetic Retinopathy Detection (5).
 
-- Review on Deep Learning Approaches: Doshi et al. proposed a Deep Learning Approach involving a Deep Convolutional Neural Network with a specific Network Architecture obtaining a Quadratic Kappa Score of 0.3996 (8). Xu et al. applied Deep Convolutional Neural Networks for early automated detection of Diabetic Retinopathy and achieved a highest accuracy of 94.5% (9). Gargeya et al. proposed a Deep Learning Model for identification of Diabetic Retinopathy and achieved a Sensitivity of 0.93, Specificity of 0.87 and Area Under the Receiver Operating Characteristic Curve of 0.94 (10).
+- Review on Deep Learning Approaches: Doshi et al. proposed a Deep Learning Approach involving a Deep Convolutional Neural Network with a specific Network Architecture obtaining a Quadratic Kappa Score of 0.3996 (6). Xu et al. applied Deep Convolutional Neural Networks for early automated detection of Diabetic Retinopathy and achieved a highest accuracy of 94.5% (7). Gargeya et al. proposed a Deep Learning Model for identification of Diabetic Retinopathy and achieved a Sensitivity of 0.93, Specificity of 0.87 and Area Under the Receiver Operating Characteristic Curve of 0.94 (8).
 
 
 ### Methodology:
@@ -122,10 +122,104 @@ The dataset consists of retinal fundus images used for detecting diabetic retino
 consists of 2000 retinal images out of which, 1000 images are labelled as 1(Healthy folder) and 1000 images are labelled as 0 (DR_presence folder). 
 
 
+### Train-Test Split:
+
+- 70% Training Set (1400 images)
+- 30% Test Set (600 images)
 
 
+### ResNet50 model summary:
+
+<img width="785" height="487" alt="Capture 6" src="https://github.com/user-attachments/assets/910991e4-6cdb-4caa-bfac-a0c3091cf149" />
 
 
+### Model Training Loss and Training Accuracy Graph:
+
+<img width="846" height="260" alt="Capture 7" src="https://github.com/user-attachments/assets/90bdccda-48f1-4f91-a59f-583f3a01c8d9" />
+
+
+### Model Evaluation:
+
+<img width="778" height="276" alt="Capture 8" src="https://github.com/user-attachments/assets/6c1bb251-318d-4382-8e85-0d73bc7c1a83" />
+
+
+### Confusion Matrix:
+
+<img width="642" height="383" alt="Capture 9" src="https://github.com/user-attachments/assets/a114f9f5-7661-4a42-a108-27e6220a220a" />
+
+
+### AUC-ROC Curve:
+
+<img width="878" height="469" alt="Capture 10" src="https://github.com/user-attachments/assets/032d28b1-2f98-4bd5-b4d9-5c76494856c0" />
+
+
+### Model Deployment:
+
+- Healthy image prediction
+
+
+<img width="785" height="330" alt="Capture 11" src="https://github.com/user-attachments/assets/1245c85c-af11-4cdf-978f-fe41ec971746" />
+
+
+- Diabetic Retinopathy image prediction
+
+
+<img width="787" height="345" alt="Capture 12" src="https://github.com/user-attachments/assets/bc392971-a7c2-4c61-ba0a-fdbd874ead0b" />
+
+
+### Limitations:
+
+Here are several key limitations to consider: 
+
+1) Data Limitations-
+
+- Insufficient Training Data: Deep learning models require large amounts of labelled data to perform effectively. Insufficient data can lead to poor model performance and overfitting. 
+- Quality of Annotations: The accuracy of the model heavily depends on the quality of the annotations. Inconsistent or incorrect labelling by human experts can introduce noise and affect the model’s performance.
+- Imbalanced Datasets: If the dataset is imbalanced (e.g., significantly more healthy images than diseased ones), the model may become biased towards the majority class, reducing its ability to detect diabetic retinopathy accurately.
+- Lack of Diversity: A dataset that lacks diversity in terms of patient demographics, imaging conditions, and disease stages may not generalize well to real-world scenarios.
+- Source Variability: Images from different devices or clinical settings can have varying qualities, which can affect the model’s performance if not properly addressed. 
+
+2) Model Limitations-
+
+- Overfitting: The model may perform well on the training data but fail to generalize to new, unseen data due to overfitting.
+- Limited Generalization: Even with diverse training data, the model may not generalize well to different imaging devices not represented in the training set. 
+- Black-box Nature: Deep learning models, particularly convolutional neural networks (CNNs), are often criticized for their lack of interpretability. Understanding the decision-making process of these models is challenging, which can be problematic in clinical settings.
+- Computational Complexity: Deep learning models can be computationally intensive, requiring significant resources for training and inference, which may limit their practical deployment in resource-constrained environments. 
+
+3) Clinical Integration-
+
+- Clinical Validation: The model needs thorough validation in real-world clinical settings to ensure it performs well outside of controlled experimental conditions.
+- Acceptance by Clinicians: The adoption of deep learning models in clinical practice requires acceptance and trust from healthcare providers, which can be hindered by the model's complexity and lack of transparency. 
+
+4) Performance Metrics-
+
+- Inadequate Metrics: Commonly used metrics like accuracy, precision, and recall may not fully capture the model’s performance, especially in detecting rare but critical cases.
+- Threshold Selection: The choice of threshold for classification can significantly impact the model’s performance metrics, making it important to choose thresholds that balance sensitivity and specificity appropriately. 
+
+5) Maintenance and Updates-
+
+- Model Degradation: Over time, the model’s performance may degrade due to changes in disease prevalence, new imaging technologies, or variations in clinical practices, necessitating regular updates and retraining. 
+- Continuous Learning: Implementing a system for continuous learning and updating the model with new data is challenging but necessary to maintain high performance. 
+
+
+### References:
+
+[1]. Ketki S. Argade, Kshitija A. Deshmukh, Madhura M. Narkhede, Nayan N. Sonawane and Sandeep Jore: ”Automatic Detection of Diabetic Retinopa-thy using Image Processing and Data Mining 
+Techniques”, International Conference on Green Computing and Internet of Things (ICGCIoT), 2015. 
+ 
+[2]. Anupriyaa Mukherjee, Diksha Rathore, Supriya Shree and Asst Prof. Shaik Jameel:”Diagnosis of Diabetic Retinopathy”, Int. Journal of Engineering Research and Applications, ISSN : 2248-9622,Vol. 5, Issue 2, ( Part -4) February 2015. 
+ 
+[3]. Karan Bhatia, Shikhar Arora and Ravi Tomar:”Diagnosis of Diabetic Retinopathy Using Machine Learning Classification Algorithm”, 2nd International Conference on Next Generation Computing Technologies (NGCT), 2016. 
+ 
+[4]. Jyoti Dnyaneshwar Labhade, L. K. Chouthmol and Suraj Deshmukh:”Diabetic retinopathy detection using soft computing techniques”, Conference on Automatic Control and Dynamic Optimization Techniques (ICACDOT), 2016. 
+ 
+[5]. Saboora Mohammadian, Ali Karsaz and Yaser M. Roshan:”A Comparative Analysis of Classification Algorithms in Diabetic Retinopathy Screening”, 29th International Conference on Software Engineering and Knowledge Engineering (SEKE), 2017. 
+ 
+[6]. Darshit Doshi, Aniket Shenoy, Deep Sidhpura and Prachi Gharpure:”Diabetic retinopathy detection using deep convolutional neural networks”, International Conference on Computing, Analytics and Security Trends (CAST), 2016. 
+ 
+[7]. Kele Xu, Dawei Feng and Haibo Mi:”Deep Convolutional Neural Network-Based Early Automated Detection of Diabetic Retinopathy Using Fundus Image”, Molecules, 2017 (Open Access Journal), 22,2054; doi:10.3390/molecules22122054. 
+ 
+[8]. Rishab Gargeya and Theodore Leng:”Automated Identification of Diabetic Retinopathy Using Deep Learning”, American Academy of Ophthalmology, 2017. 
 
 
 
